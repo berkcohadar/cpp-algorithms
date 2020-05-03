@@ -203,6 +203,45 @@ int main(){
     avg_heap+=time1-time0;
     print_to_file(fa, time1-time0,swaps);
 
+
+
+    /* --------------------- SORTING --------------------- */
+    fprintf(fa,"\n\n\n\t\t\t\t\t\tARRAY SIZE: 1.000.000\n\n");
+    fprintf(fa,"ALGORITHM\t\t\tDATA\t\t\tORDER\t\t\tTIME\t\t\tSWAPS\n");
+    fprintf(fa,"-----------------------------------------------------------------------------------------------------------------\n");
+
+    size = 1000000;
+    int array0[size];
+
+    srand((unsigned)time(0));
+    for(int i=0; i<size; i++) array0[i] = (rand()%10000)+1;
+    fprintf(fa,"QuickSort\t\t\tINT\t\t\tRandom\t\t\t");
+    time0 = now();
+    swaps = quickSort(array0,size);
+    time1 = now();
+    /*avg_quick+=time1-time0;*/
+    print_to_file(fa, time1-time0,swaps);
+
+    srand((unsigned)time(0));
+    for(int i=0; i<size; i++) array0[i] = (rand()%1000000)+1;
+    fprintf(fa,"MergeSort\t\t\tINT\t\t\tRandom\t\t\t");
+    time0 = now();
+    swaps = mergeSort(array0,size);
+    time1 = now();
+    /*avg_merge+=time1-time0;*/
+    print_to_file(fa, time1-time0,swaps);
+
+    srand((unsigned)time(0));
+    for(int i=0; i<size; i++) array0[i] = (rand()%1000000)+1;
+    fprintf(fa,"HeapSort\t\t\tINT\t\t\tRandom\t\t\t");
+    time0 = now();
+    swaps = heapSort(array0,size);
+    time1 = now();
+    /*avg_heap+=time1-time0;*/
+    print_to_file(fa, time1-time0,swaps);
+
+
+
     fprintf(fa,"\n\n**SWAPS REPRESENTS COMPARES FOR MERGE SORT**\n\n");
 
     /* --------------------- SEARCHING --------------------- */

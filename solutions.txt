@@ -2,27 +2,37 @@
 
 ALGORITHM			DATA			ORDER			TIME			SWAPS
 -----------------------------------------------------------------------------------------------------------------
-QuickSort			INT			Random			3			38480
-Insertion			INT			Random			153			25339809
-BubbleSort			INT			Random			309			25339809
-Selection			INT			Random			102			9999
-MergeSort			INT			Random			1			133616
-HeapSort			INT			Random			2			124164
+QuickSort			INT			Random			3			37255
+Insertion			INT			Random			160			24876110
+BubbleSort			INT			Random			322			24876110
+Selection			INT			Random			105			9999
+MergeSort			INT			Random			2			133616
+HeapSort			INT			Random			2			124150
 QuickSort			INT			Sorted			0			11808
 Insertion			INT			Sorted			0			0
-BubbleSort			INT			Sorted			113			0
-Selection			INT			Sorted			101			9999
+BubbleSort			INT			Sorted			115			0
+Selection			INT			Sorted			104			9999
 MergeSort			INT			Sorted			1			133616
 HeapSort			INT			Sorted			2			131956
 QuickSort			INT			Reverse			0			18331
-Insertion			INT			Reverse			294			49995000
-BubbleSort			INT			Reverse			300			49995000
-Selection			INT			Reverse			103			9999
+Insertion			INT			Reverse			302			49995000
+BubbleSort			INT			Reverse			304			49995000
+Selection			INT			Reverse			117			9999
 MergeSort			INT			Reverse			1			133616
-HeapSort			INT			Reverse			2			116696
+HeapSort			INT			Reverse			1			116696
 
 
-**SWAPS SHOWS COMPARES FOR MERGE SORT**
+
+						ARRAY SIZE: 1.000.000
+
+ALGORITHM			DATA			ORDER			TIME			SWAPS
+-----------------------------------------------------------------------------------------------------------------
+QuickSort			INT			Random			226			5065785
+MergeSort			INT			Random			211			19951424
+HeapSort			INT			Random			405			19048557
+
+
+**SWAPS REPRESENTS COMPARES FOR MERGE SORT**
 
 
 
@@ -31,7 +41,7 @@ HeapSort			INT			Reverse			2			116696
 
 ALGORITHM			DATA			ORDER			TIME			OPS			FOUND
 -----------------------------------------------------------------------------------------------------------------------------------------
-Linear				INT			Random			1			271506			TRUE
+Linear				INT			Random			0			113874			TRUE
 Binary				INT			Sorted			0			19			TRUE
 Binary				INT			Sorted			0			20			FALSE
 Jump				INT			Sorted			0			1011			TRUE
@@ -45,7 +55,7 @@ AVERAGE TIME SPENT IN SORTING ALGORTIHMS WITH 10.000 ELEMENTS
 -------------------------------------------------------------------------------------------------
 Quick Sort     :    1 ms
 Merge Sort     :    1 ms
-Heap Sort      :    2 ms
-Selection Sort :    102 ms
-Insertion Sort :    149 ms
-Bubble Sort    :    240 ms
+Heap Sort      :    1 ms
+Selection Sort :    108 ms
+Insertion Sort :    154 ms
+Bubble Sort    :    247 ms
