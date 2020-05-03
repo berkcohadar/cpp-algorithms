@@ -1,0 +1,47 @@
+						ARRAY SIZE: 10000
+
+ALGORITHM			DATA			ORDER			TIME			SWAPS
+-----------------------------------------------------------------------------------------------------------------
+QuickSort			INT			Random			3			38325
+Insertion			INT			Random			152			25121859
+BubbleSort			INT			Random			304			25121859
+Selection			INT			Random			103			9999
+MergeSort			INT			Random			2			0
+HeapSort			INT			Random			2			124153
+QuickSort			INT			Sorted			0			11808
+Insertion			INT			Sorted			0			0
+BubbleSort			INT			Sorted			113			0
+Selection			INT			Sorted			107			9999
+MergeSort			INT			Sorted			1			0
+HeapSort			INT			Sorted			1			131956
+QuickSort			INT			Reverse			0			18331
+Insertion			INT			Reverse			297			49995000
+BubbleSort			INT			Reverse			297			49995000
+Selection			INT			Reverse			102			9999
+MergeSort			INT			Reverse			1			0
+HeapSort			INT			Reverse			1			116696
+
+
+
+						ARRAY SIZE: 1000000
+
+ALGORITHM			DATA			ORDER			TIME			OPS			FOUND
+-----------------------------------------------------------------------------------------------------------------------------------------
+Linear				INT			Random			0			339211			TRUE
+Binary				INT			Sorted			0			19			TRUE
+Binary				INT			Sorted			0			20			FALSE
+Jump				INT			Sorted			0			1011			TRUE
+Jump				INT			Sorted			0			1999			TRUE
+Jump				INT			Sorted			0			1			FALSE
+Jump				INT			Sorted			0			1000			FALSE
+
+
+
+AVERAGE TIME SPENT IN SORTING ALGORTIHMS WITH 10.000 ELEMENTS
+-------------------------------------------------------------------------------------------------
+Quick Sort     :    1 ms
+Merge Sort     :    1 ms
+Heap Sort      :    1 ms
+Selection Sort :    104 ms
+Insertion Sort :    149 ms
+Bubble Sort    :    238 ms
