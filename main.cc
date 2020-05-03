@@ -37,7 +37,7 @@ void print_to_file_search(FILE* f, long diff,int ops, char* found){
 using namespace std;
 int main(){
     FILE *fa = fopen("solutions.txt", "w");
-    fprintf(fa,"\t\t\t\t\t\tARRAY SIZE: 10000\n\n");
+    fprintf(fa,"\t\t\t\t\t\tARRAY SIZE: 10.000\n\n");
     fprintf(fa,"ALGORITHM\t\t\tDATA\t\t\tORDER\t\t\tTIME\t\t\tSWAPS\n");
     fprintf(fa,"-----------------------------------------------------------------------------------------------------------------\n");
 
@@ -208,7 +208,7 @@ int main(){
 
 
     /* --------------------- SEARCHING --------------------- */
-    fprintf(fa,"\n\n\n\t\t\t\t\t\tARRAY SIZE: 1000000\n\n");
+    fprintf(fa,"\n\n\n\t\t\t\t\t\tARRAY SIZE: 1.000.000\n\n");
     fprintf(fa,"ALGORITHM\t\t\tDATA\t\t\tORDER\t\t\tTIME\t\t\tOPS\t\t\tFOUND\n");
     fprintf(fa,"-----------------------------------------------------------------------------------------------------------------------------------------\n");
 
@@ -286,9 +286,6 @@ int main(){
     fprintf(fa,"Selection Sort :    %ld ms\n",avg_select/3);
     fprintf(fa,"Insertion Sort :    %ld ms\n",avg_insert/3);
     fprintf(fa,"Bubble Sort    :    %ld ms\n",avg_bubble/3);
-
-
-
 
     fclose(fa);
 }
