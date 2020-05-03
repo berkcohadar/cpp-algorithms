@@ -36,6 +36,7 @@ int selectionSort(int a[], int n){
   }
   return swap_counter;
 }
+int merge_counter;
 
 static void msort(int a[], int temp[], int lo, int hi) {
   if (hi - lo < 2) return;
@@ -52,13 +53,16 @@ static void msort(int a[], int temp[], int lo, int hi) {
     else if (i2 == hi) a[dest] = temp[i1++];
     else if (temp[i1] <= temp[i2]) a[dest] = temp[i1++];
     else  a[dest] = temp[i2++];
+    merge_counter++;
   }
 }
 
-void mergeSort(int a[], int n) {
+int mergeSort(int a[], int n) {
   int* temp = new int[n];
+  merge_counter = 0;
   msort(a, temp, 0, n);
   delete temp;
+  return merge_counter;
 }
 
 static int findPivot(int a[], int i, int j) { return (i+j)/2; }

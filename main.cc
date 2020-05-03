@@ -86,9 +86,8 @@ int main(){
     for(int i=0; i<size; i++) array[i] = (rand()%10000)+1;
     fprintf(fa,"MergeSort\t\t\tINT\t\t\tRandom\t\t\t");
     time0 = now();
-    mergeSort(array,size);
+    swaps = mergeSort(array,size);
     time1 = now();
-    swaps = 0;
     avg_merge+=time1-time0;
     print_to_file(fa, time1-time0,swaps);
 
@@ -136,9 +135,8 @@ int main(){
     for(int i=0; i<size; i++) array[i] = i+1;
     fprintf(fa,"MergeSort\t\t\tINT\t\t\tSorted\t\t\t");
     time0 = now();
-    mergeSort(array,size);
+    swaps = mergeSort(array,size);
     time1 = now();
-    swaps = 0;
     avg_merge+=time1-time0;
     print_to_file(fa, time1-time0,swaps);
 
@@ -191,9 +189,8 @@ int main(){
     for(int i=size; i>0; i--){ array[j] = i; j++;}
     fprintf(fa,"MergeSort\t\t\tINT\t\t\tReverse\t\t\t");
     time0 = now();
-    mergeSort(array,size);
+    swaps = mergeSort(array,size);
     time1 = now();
-    swaps = 0;
     avg_merge+=time1-time0;
     print_to_file(fa, time1-time0,swaps);
 
@@ -206,6 +203,7 @@ int main(){
     avg_heap+=time1-time0;
     print_to_file(fa, time1-time0,swaps);
 
+    fprintf(fa,"\n\n**SWAPS REPRESENTS COMPARES FOR MERGE SORT**\n\n");
 
     /* --------------------- SEARCHING --------------------- */
     fprintf(fa,"\n\n\n\t\t\t\t\t\tARRAY SIZE: 1.000.000\n\n");
