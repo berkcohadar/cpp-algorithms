@@ -10,7 +10,7 @@ Ayca Ege KAYHAN
 Our project's aim is to calculate the efficiency of some sorting and searching algorithms. 
 These algorithms are quick sort, bubble sort, merge sort, heap sort, selection sort, insertion 
 sort, linear search, binary search and lastly, jump search. Our aim is to calculate the time 
-spent and operations (swaps or compares) made on each algorithm with the same amount of elements. 
+spent and operations (swaps etc.) made on each algorithm with the same amount of elements. 
 
 
 
