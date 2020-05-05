@@ -19,7 +19,7 @@ When comparing 10.000 elements;
 While quick sort, merge sort and heap sort is quite close to each other in terms of time consumption; 
 bubble sort, selection sort and insertion sort is much slower when compare. The algorithms are tested 
 with different order styles, and they show different results for different orders. For example, 
-bubble sort and insertion sort make no operations when the data is already sorted, how ever they 
+bubble sort and insertion sort make no operations when the data is already sorted, however they 
 make huge amount of operations when the data is sorted in reversed order. Additionally, selection 
 sort makes SIZE-1 operations every time no matter what the order type is. 
 
