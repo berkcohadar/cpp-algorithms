@@ -34,7 +34,7 @@ We see that the most efficient sort algorithm is merge sort, then quick sort, an
 
 SEARCHING:
 
-For searching algorithms with 1 million elements, all three algorithms is very close to each in terms of time consumption; 
+For searching algorithms with 1 million elements, all three algorithms are very close to each in terms of time consumption; 
 however, the number of operations made in these algorithms differ. Binary search is the most effective 
 and linear search is the least in terms of operation amount. Additionally, jump search's operation 
 amount differs according to the wanted value. 
