@@ -1,5 +1,4 @@
-CS240 JENSEN PROJECT GROUP
-
+# Contributors
 Berk COHADAR
 Aleyna CEYLAN
 Ayca Ege KAYHAN
